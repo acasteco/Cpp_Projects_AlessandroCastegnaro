@@ -16,6 +16,18 @@ public:
 	float precision;
 	int life;
 
+	/*Player() :
+	weapon(static_cast<Weapon>(rand() % static_cast<int>(Weapon::MAX))),
+	precision((rand() % 10) / 10.0f),
+	life(100) {};
+	
+	Player::Player(const Weapon &t_weapon, float t_precision, int t_life):
+		weapon(t_precision),
+		precision(t_precision),
+		life(t_life) {};
+	
+	*/
+
 	std::string weaponString() {
 		switch (weapon)
 		{
@@ -39,11 +51,15 @@ public:
 
 	}
 
+
+	
+	
 	Player::Player() {
 		weapon = Weapon(rand() % static_cast<int>(Weapon::MAX));//static_cast<int>(Weapon::MAX) = weaponDamage(MAX)
 		precision = static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
 		life = rand() % 100;
 	}
+
 	Player::Player(Weapon t_weapon, float t_precision, int t_life) {
 		weapon = t_weapon;
 		precision = t_precision;
