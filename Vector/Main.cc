@@ -8,9 +8,7 @@ struct Persona {
 };
 
 
-void AddVectors(std::vector) {
 
-}
 
 
 int main() {
