@@ -118,9 +118,9 @@ std::queue<int> shiftLeft(std::queue<int> a) {
 }
 
 std::deque<int> eraseValue(std::deque<int> a, int v) {
-	for (int i = 0; i < a.size(); i++) {
-		if (a[i] == v)
-			a.erase(i);
+	for (auto it = a.begin(); it != a.end(); it++) {
+		if (*it == v)
+			a.erase(it);
 	}
 }
 
