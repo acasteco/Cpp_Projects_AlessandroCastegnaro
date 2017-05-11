@@ -41,4 +41,25 @@ reinterpret_cast
 	i4 = static_cast<int>(p);		//error
 	i4 = reinterpret_cast<int>(p);	//OK
 	
+
+
+
+
+
+
+
+|	|	|	|	TEMPLATE	|	|	|	|
+
+
+template < typename T> void printList(std::list<T> l){
+	for(auto x : l){
+		std::cout << x << '-';
+	}
+	std::cout << std::endl;
+}
+std::list<std::string> l1({"hola", "hello"});
+printList(l1);
+
+std::list<int> l2({10,20,30});
+printList(l2);
 */

@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E3C15A48-7D50-4493-BBDE-2D955B252FF9}</ProjectGuid>
+    <ProjectGuid>{5EC3BAF6-B8CB-4C37-892C-16066DDB7A16}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>stack</RootNamespace>
+    <RootNamespace>list</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -146,11 +146,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="myStack.cpp" />
-    <ClCompile Include="Source.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="myStack.h" />
+    <ClCompile Include="list.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
