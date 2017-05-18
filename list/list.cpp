@@ -34,3 +34,16 @@ std::advance(it, 6); //1 10 20 30 30 20 2 3 4 5
 *it = 15;			 //1 10 20 30 30 20 15 3 4 5
 
 */
+#include <iostream>
+#include "MyList.h"
+#include <string>
+
+int main() {
+	srand(time(NULL));
+	MyList lista;
+	lista.pushFront(3);
+	lista.pushBack(5);
+	std::cout << lista.front()->value << lista.back()->value << std::endl;
+	system("pause");
+	return 0;
+}
